@@ -1,0 +1,34 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+string filename = "getInfo.txt";
+
+class sortWithPayment(){
+  public:
+    sortWithPayment(){};
+    sortWithPayment(string n){
+      name = n;
+    };
+    string name;
+    int payment;
+  private:
+    void getInfo(ofstream f){
+      getline(f, name);
+
+    }
+
+    void getName(ofstream f){
+      getline(f, name);
+    }
+
+}
+
+
+
+
+
+
+
